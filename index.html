@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="{{ url_for('predict') }}" method="post">
+        <h1>STOCK PRICE PREDICTION</h1>
+        <label for="Year">Year</label>
+        <input type="number" id="Year" name="Year" required>
+
+        <label for="Month">Month</label>
+        <input type="number" id="Month" name="Month" required>
+        
+        <label for="UseChip">UseChip </label>
+        <input type="number" id="UseChip" name="UseChip" required>
+        
+        <label for="Amount">Amount </label>
+        <input type="number" id="Amount" name="Amount" required>
+        
+        <label for="MerchantName">MerchantName</label>
+        <input type="number" id="MerchantName" name="MerchantName" required step="0.01">
+        
+        <label for="MerchantCity">MerchantCity</label>
+        <input type="number" id="MerchantCity" name="MerchantCity" required step="0.01">
+        
+        <label for="MerchantCountry">MerchantCountry</label>
+        <input type="number" id="MerchantCountry" name="MerchantCountry" required>
+        
+        <label for="MCC">MCC</label>
+        <input type="number" id="MCC" name="MCC" required>
+        
+        <!-- <label for="gender-female">Gender Female </label>
+        <input type="number" id="gender-female" name="GENDER FEMALE" required>
+        
+        <label for="smoke-ever">Smoke Ever </label>
+        <input type="number" id="smoke-ever" name="SMOKE EVER" required>
+        
+        <label for="smoke-former">Smoke Former </label>
+        <input type="number" id="smoke-former" name="SMOKE FORMER" required>
+        
+        <label for="smoke-never">Smoke Never </label>
+        <input type="number" id="smoke-never" name="SMOKE NEVER " required>
+        
+        <label for="smoke-current">Smoke Current </label>
+        <input type="number" id="smoke-current" name="SMOKE CURRENT " required> -->
+        
+        <button>CONTINUE</button>
+    </form>
+</body>
+</html>
